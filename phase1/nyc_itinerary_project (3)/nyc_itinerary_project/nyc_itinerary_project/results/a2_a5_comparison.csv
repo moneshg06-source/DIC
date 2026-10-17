@@ -1,0 +1,4 @@
+model,MAE,RMSE,R2
+Baseline: hour average,328.876,514.462,0.672
+A2 Linear Regression,291.984,444.782,0.755
+A5 Random Forest,211.751,355.819,0.843

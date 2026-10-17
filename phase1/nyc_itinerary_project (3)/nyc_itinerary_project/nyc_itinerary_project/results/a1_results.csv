@@ -1,0 +1,5 @@
+model,accuracy,top3_accuracy,macro_F1,ROC_AUC_ovr
+Logistic Regression,0.1838,0.5909,0.1629,0.6372
+"Logistic Regression, no balancing (C=10.0)",0.5339,0.825,0.1517,0.6423
+Baseline: theme frequencies (always most common),0.5177,0.7789,0.0975,0.5
+Baseline: random guess by frequency,0.3154,,0.1413,0.4992

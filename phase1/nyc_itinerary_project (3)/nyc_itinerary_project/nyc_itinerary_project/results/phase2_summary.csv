@@ -1,0 +1,104 @@
+algorithm,metric,value,note
+Data,foursquare_checkins,89118.0,
+Data,foursquare_users,1078.0,
+Data,foursquare_venues,8645.0,
+Data,google_places,36888.0,
+Data,bridge_hours,16057.0,
+A1 Logistic Regression,accuracy,0.1838,Logistic Regression
+A1 Logistic Regression,top3_accuracy,0.5909,Logistic Regression
+A1 Logistic Regression,macro_F1,0.1629,Logistic Regression
+A1 Logistic Regression,ROC_AUC_ovr,0.6372,Logistic Regression
+A1 Logistic Regression,accuracy,0.5339,"Logistic Regression, no balancing (C=10.0)"
+A1 Logistic Regression,top3_accuracy,0.825,"Logistic Regression, no balancing (C=10.0)"
+A1 Logistic Regression,macro_F1,0.1517,"Logistic Regression, no balancing (C=10.0)"
+A1 Logistic Regression,ROC_AUC_ovr,0.6423,"Logistic Regression, no balancing (C=10.0)"
+A1 Logistic Regression,accuracy,0.5177,Baseline: theme frequencies (always most common)
+A1 Logistic Regression,top3_accuracy,0.7789,Baseline: theme frequencies (always most common)
+A1 Logistic Regression,macro_F1,0.0975,Baseline: theme frequencies (always most common)
+A1 Logistic Regression,ROC_AUC_ovr,0.5,Baseline: theme frequencies (always most common)
+A1 Logistic Regression,accuracy,0.3154,Baseline: random guess by frequency
+A1 Logistic Regression,macro_F1,0.1413,Baseline: random guess by frequency
+A1 Logistic Regression,ROC_AUC_ovr,0.4992,Baseline: random guess by frequency
+A1 Logistic Regression,best_period_lift[Food & Drink],1.1316,Day
+A1 Logistic Regression,best_period_lift[Nightlife],2.1231,Night
+A1 Logistic Regression,best_period_lift[Parks & Outdoors],1.2046,Day
+A1 Logistic Regression,best_period_lift[Shopping],1.237,Day
+A1 Logistic Regression,best_period_lift[Entertainment],1.4972,Golden hour
+A1 Logistic Regression,best_period_lift[Landmarks & Views],1.1651,Day
+A1 Logistic Regression,best_period_lift[Museums & Arts],1.2256,Day
+A1 Logistic Regression,sunrise_hours_lift[Entertainment],0.572,hours 5-7 AM
+A1 Logistic Regression,sunrise_hours_lift[Food & Drink],1.1467,hours 5-7 AM
+A1 Logistic Regression,sunrise_hours_lift[Landmarks & Views],1.6464,hours 5-7 AM
+A1 Logistic Regression,sunrise_hours_lift[Museums & Arts],0.9716,hours 5-7 AM
+A1 Logistic Regression,sunrise_hours_lift[Nightlife],0.3194,hours 5-7 AM
+A1 Logistic Regression,sunrise_hours_lift[Parks & Outdoors],1.8683,hours 5-7 AM
+A1 Logistic Regression,sunrise_hours_lift[Shopping],0.4676,hours 5-7 AM
+A2 Linear Regression,MAE,328.876,Baseline: hour average
+A2 Linear Regression,RMSE,514.462,Baseline: hour average
+A2 Linear Regression,R2,0.672,Baseline: hour average
+A2 Linear Regression,MAE,291.984,Linear Regression
+A2 Linear Regression,RMSE,444.782,Linear Regression
+A2 Linear Regression,R2,0.755,Linear Regression
+A2 Linear Regression,effect[weather: sleet],-673.3323,people/hour
+A2 Linear Regression,effect[weather: snow],-509.9356,people/hour
+A2 Linear Regression,effect[weather: rain],-490.2609,people/hour
+A2 Linear Regression,effect[weather: wind],-479.8118,people/hour
+A2 Linear Regression,effect[weather: fog],-388.5706,people/hour
+A2 Linear Regression,effect[weather: cloudy],-210.7739,people/hour
+A2 Linear Regression,effect[weather: partly-cloudy],-124.2777,people/hour
+A2 Linear Regression,effect[precipitation (+0.1 inch)],-123.9145,people/hour
+A2 Linear Regression,effect[temperature (+1 °F)],9.9384,people/hour
+A2 Linear Regression,effect[event],59.2363,people/hour
+A2 Linear Regression,effect[weekend],213.8626,people/hour
+A5 Random Forest,MAE,211.751,A5 Random Forest
+A5 Random Forest,RMSE,355.819,A5 Random Forest
+A5 Random Forest,R2,0.843,A5 Random Forest
+A5 Random Forest,importance[has_event],1.9947,MAE increase
+A5 Random Forest,importance[weather_code],8.6806,MAE increase
+A5 Random Forest,importance[month],28.9602,MAE increase
+A5 Random Forest,importance[precipitation],34.3822,MAE increase
+A5 Random Forest,importance[is_weekend],47.5363,MAE increase
+A5 Random Forest,importance[temperature],104.6579,MAE increase
+A5 Random Forest,importance[hour],599.5549,MAE increase
+A5 Random Forest,"october_3pm[clear, weekday]",1762.7716,predicted people/hour
+A5 Random Forest,"october_8pm[clear, weekday]",383.9382,predicted people/hour
+A5 Random Forest,"october_3pm[clear, weekend]",3099.5223,predicted people/hour
+A5 Random Forest,"october_8pm[clear, weekend]",413.9088,predicted people/hour
+A5 Random Forest,"october_3pm[rain, weekday]",640.3564,predicted people/hour
+A5 Random Forest,"october_8pm[rain, weekday]",294.217,predicted people/hour
+A5 Random Forest,"october_3pm[rain, weekend]",493.9523,predicted people/hour
+A5 Random Forest,"october_8pm[rain, weekend]",313.4839,predicted people/hour
+A3 k-Means,k,4.0,
+A3 k-Means,silhouette,0.2763,
+A3 k-Means,size[G0: Golden hour places],1502.0,
+A3 k-Means,size[G1: Day places],3660.0,
+A3 k-Means,size[G2: Dusk places],1231.0,
+A3 k-Means,size[G3: Night places],2252.0,
+A4 k-NN,Precision@5,0.0144,k-NN
+A4 k-NN,Recall@5,0.0157,k-NN
+A4 k-NN,HitRate@5,0.0673,k-NN
+A4 k-NN,Precision@10,0.0106,k-NN
+A4 k-NN,Recall@10,0.0223,k-NN
+A4 k-NN,HitRate@10,0.0962,k-NN
+A4 k-NN,Precision@20,0.0111,k-NN
+A4 k-NN,Recall@20,0.0462,k-NN
+A4 k-NN,HitRate@20,0.1971,k-NN
+A4 k-NN,Precision@5,0.0183,Most popular
+A4 k-NN,Recall@5,0.0147,Most popular
+A4 k-NN,HitRate@5,0.0913,Most popular
+A4 k-NN,Precision@10,0.0144,Most popular
+A4 k-NN,Recall@10,0.0217,Most popular
+A4 k-NN,HitRate@10,0.1394,Most popular
+A4 k-NN,Precision@20,0.0125,Most popular
+A4 k-NN,Recall@20,0.0325,Most popular
+A4 k-NN,HitRate@20,0.2115,Most popular
+A4 k-NN,Precision@5,0.001,Random
+A4 k-NN,Recall@5,0.0004,Random
+A4 k-NN,HitRate@5,0.0048,Random
+A4 k-NN,Precision@10,0.001,Random
+A4 k-NN,Recall@10,0.0008,Random
+A4 k-NN,HitRate@10,0.0096,Random
+A4 k-NN,Precision@20,0.0005,Random
+A4 k-NN,Recall@20,0.0008,Random
+A4 k-NN,HitRate@20,0.0096,Random
+A6 Markov Chain,same_day_pairs,34317.0,
